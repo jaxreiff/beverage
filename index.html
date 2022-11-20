@@ -5,33 +5,27 @@
         
         
         <link rel="icon" href="icon.ico">
-        <style type="text/css">body, html {
-    height: 100%;
-    overscroll-behavior: contain;
-    touch-action: none;
-}
-
+        <style type="text/css">
 body {
     margin: 0;
     background: black;
 }
 
 .game-container {
-    position: relative;
-    width: 100%;
-    height: 100%; 
-    overflow: hidden;
+    aspect-ratio: 6 / 8;
+    max-height: 100%;
+    margin: auto;
+    position: absolute;
+    inset: 0;
 }
 
-canvas#bevy {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: contain;
+.game-container>canvas {
+    position: absolute;
 }
 </style>
     
-<link rel="preload" href="/beverage/beverage-e0a7cc3f86f71e2b_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
-<link rel="modulepreload" href="/beverage/beverage-e0a7cc3f86f71e2b.js"></head>
+<link rel="preload" href="/beverage/beverage-67265a27db9d95fe_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
+<link rel="modulepreload" href="/beverage/beverage-67265a27db9d95fe.js"></head>
     <body>
         <script>// Insert hack to make sound autoplay on Chrome as soon as the user interacts with the tab:
 // https://developers.google.com/web/updates/2018/11/web-audio-autoplay#moving-forward
@@ -103,4 +97,4 @@ canvas#bevy {
         </div>
     
 
-<script type="module">import init from '/beverage/beverage-e0a7cc3f86f71e2b.js';init('/beverage/beverage-e0a7cc3f86f71e2b_bg.wasm');</script></body></html>
+<script type="module">import init from '/beverage/beverage-67265a27db9d95fe.js';init('/beverage/beverage-67265a27db9d95fe_bg.wasm');</script></body></html>
