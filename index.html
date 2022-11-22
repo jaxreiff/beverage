@@ -12,11 +12,18 @@ body {
 }
 
 .game-container {
-    aspect-ratio: 6 / 8;
+    aspect-ratio: 5 / 8;
     max-height: 100%;
     margin: auto;
     position: absolute;
     inset: 0;
+    touch-action: none;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent;
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .game-container>canvas {
@@ -24,8 +31,8 @@ body {
 }
 </style>
     
-<link rel="preload" href="/beverage/beverage-67265a27db9d95fe_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
-<link rel="modulepreload" href="/beverage/beverage-67265a27db9d95fe.js"></head>
+<link rel="preload" href="/beverage/beverage-3ffa60e282f545fd_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
+<link rel="modulepreload" href="/beverage/beverage-3ffa60e282f545fd.js"></head>
     <body>
         <script>// Insert hack to make sound autoplay on Chrome as soon as the user interacts with the tab:
 // https://developers.google.com/web/updates/2018/11/web-audio-autoplay#moving-forward
@@ -97,4 +104,4 @@ body {
         </div>
     
 
-<script type="module">import init from '/beverage/beverage-67265a27db9d95fe.js';init('/beverage/beverage-67265a27db9d95fe_bg.wasm');</script></body></html>
+<script type="module">import init from '/beverage/beverage-3ffa60e282f545fd.js';init('/beverage/beverage-3ffa60e282f545fd_bg.wasm');</script></body></html>
